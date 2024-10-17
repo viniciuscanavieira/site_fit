@@ -19,8 +19,10 @@
             <li><a href="#posTreino">Pós-treino</a></li>
             <li><a href="#ganhoMassa">Ganho de Massa Muscular</a></li>
         </ul>
+        <button class="navbar-toggle" aria-label="Toggle menu">
+            &#9776;
+        </button>
     </nav>
-
 
     <!-- Seção de Resumo -->
     <section class="intro">
@@ -182,7 +184,7 @@
     <!-- Popups de Receitas Pós-treino -->
     <div id="posTreino1" class="popup">
         <div class="popup-content">
-            <img src="images/omelete_frango.jpg" alt="Omelete com Frango" class="recipe-image">
+            <img src="img/omelete-de-frango.png" alt="Omelete com Frango" class="recipe-image">
             <h1>Omelete com Frango</h1>
             <p><strong>Ingredientes:</strong></p>
             <ul>
@@ -204,7 +206,8 @@
 
     <div id="posTreino2" class="popup">
         <div class="popup-content">
-            <img src="images/smoothie_morango.jpg" alt="Smoothie de Morango e Whey" class="recipe-image">
+            <img src="img/01920d35-2ece-7bed-b534-ea272560c575.png" alt="Smoothie de Morango e Whey"
+                class="recipe-image">
             <h1>Smoothie de Morango e Whey</h1>
             <p><strong>Ingredientes:</strong></p>
             <ul>
@@ -225,7 +228,7 @@
 
     <div id="posTreino3" class="popup">
         <div class="popup-content">
-            <img src="images/salada_quinoa.jpg" alt="Salada de Quinoa e Legumes" class="recipe-image">
+            <img src="img/salada-de-quinoa-2.jpg" alt="Salada de Quinoa e Legumes" class="recipe-image">
             <h1>Salada de Quinoa e Legumes</h1>
             <p><strong>Ingredientes:</strong></p>
             <ul>
@@ -248,7 +251,7 @@
     <!-- Popups de Receitas para Ganho de Massa Muscular -->
     <div id="massa1" class="popup">
         <div class="popup-content">
-            <img src="images/quinoa_carne.jpg" alt="Quinoa com Carne Moída" class="recipe-image">
+            <img src="img/img-site-2-mis-carne-quinoa.jpg" alt="Quinoa com Carne Moída" class="recipe-image">
             <h1>Quinoa com Carne Moída</h1>
             <p><strong>Ingredientes:</strong></p>
             <ul>
@@ -269,7 +272,8 @@
 
     <div id="massa2" class="popup">
         <div class="popup-content">
-            <img src="images/batata_salmao.jpg" alt="Batata Doce com Salmão" class="recipe-image">
+            <img src="img/receita-de-salmao-com-batata-doce-e-banana-da-terra-ao-forno.jpg" alt="Batata Doce com Salmão"
+                class="recipe-image">
             <h1>Batata Doce com Salmão</h1>
             <p><strong>Ingredientes:</strong></p>
             <ul>
@@ -289,7 +293,7 @@
 
     <div id="massa3" class="popup">
         <div class="popup-content">
-            <img src="images/frango_brocolis.jpg" alt="Frango Grelhado com Brócolis" class="recipe-image">
+            <img src="img/frango-glrelhado.jpeg" alt="Frango Grelhado com Brócolis" class="recipe-image">
             <h1>Frango Grelhado com Brócolis</h1>
             <p><strong>Ingredientes:</strong></p>
             <ul>
@@ -306,6 +310,11 @@
             <button class="close-btn" onclick="closePopup('massa3')">Fechar</button>
         </div>
     </div>
+    <footer class="footer">
+        <p>Desenvolvido por <strong>Vinícius Canavieira Teixeira</strong></p>
+        <a href="https://suaempresa.com.br" class="empresa-btn">Visite minha empresa</a>
+    </footer>
+
     <script>
         function openPopup(popupId) {
             document.getElementById(popupId).style.display = 'block';
@@ -322,6 +331,22 @@
                     behavior: 'smooth'
                 });
             });
+        });
+        const toggleButton = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        toggleButton.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+
+        // Efeito de transição ao rolar a página
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
     </script>
 </body>

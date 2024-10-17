@@ -266,3 +266,135 @@ nav {
         /* Texto menor em telas pequenas */
     }
 }
+
+/* Estilo do footer simples */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer strong {
+    color: #00bfff;
+}
+
+/* Estilo do botão da empresa */
+.empresa-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00bfff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.empresa-btn:hover {
+    background-color: #008ecc;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .footer p {
+        font-size: 12px;
+    }
+
+    .empresa-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Estilos da Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.navbar-logo img {
+    max-width: 60px;
+    height: auto;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-menu li a:hover {
+    background-color: #00bfff;
+    border-radius: 5px;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Efeito de transição ao rolar */
+.navbar.scrolled {
+    background-color: #111;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .navbar-menu li {
+        margin-bottom: 10px;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+.navbar-menu.active {
+    display: flex;
+}
+
+/* Efeito de rolagem suave */
+html {
+    scroll-behavior: smooth;
+}
