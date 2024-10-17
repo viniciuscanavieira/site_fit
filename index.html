@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentação Saudável</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="img/logo.png" alt="Logo2" class="logo-image">
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="#preTreino">Pré-treino</a></li>
+            <li><a href="#posTreino">Pós-treino</a></li>
+            <li><a href="#ganhoMassa">Ganho de Massa Muscular</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Seção de Resumo -->
+    <section class="intro">
+        <img src="img/logo.png" alt="Logo2" class="logo-image2">
+        <h2>Rotina de Alimentação Saudável</h2>
+        <p>A alimentação saudável é essencial para garantir energia durante o treino, recuperação pós-treino e ganho de
+            massa muscular. Aqui estão algumas receitas que irão te ajudar a alcançar seus objetivos!</p>
+    </section>
+
+    <!-- Cards de Receitas -->
+    <section class="menu">
+        <h2>Cardápio de Receitas</h2>
+
+        <!-- Pré-treino -->
+        <div id="preTreino" class="recipe-section">
+            <h2>Receitas Pré-treino</h2>
+            <div class="card" onclick="openPopup('preTreino1')">
+                <img src="img/banana_aveia.png" alt="Shake de Banana e Aveia" class="card-image">
+                Shake de Banana e Aveia
+                <h3>
+                    clique para abrir a Receita.
+                </h3>
+            </div>
+            <div class="card" onclick="openPopup('preTreino2')">
+                <img src="img/panqueca_proteica.jpg" alt="Panqueca Proteica" class="card-image">
+                Panqueca Proteica
+                <h3>
+                    clique para abrir a Receita.
+                </h3>
+            </div>
+            <div class="card" onclick="openPopup('preTreino3')">
+                <img src="img/Tapioca-de-banana-com-canela.jpg" alt="Tapioca com Pasta de Amendoim" class="card-image">
+                Tapioca com Pasta de Amendoim
+                <h3>
+                    clique para abrir a Receita.
+                </h3>
+            </div>
+        </div>
+
+        <!-- Pós-treino -->
+        <div id="posTreino" class="recipe-section">
+            <h2>Receitas Pós-treino</h2>
+            <div class="card" onclick="openPopup('posTreino1')">
+                <img src="img/omelete-de-frango.png" alt="Omelete com Frango" class="card-image">
+                Omelete com Frango
+                <h3>
+                    clique para abrir a Receita.
+                </h3>
+            </div>
+            <div class="card" onclick="openPopup('posTreino2')">
+                <img src="img/01920d35-2ece-7bed-b534-ea272560c575.png" alt="Smoothie de Morango e Whey"
+                    class="card-image">
+                Smoothie de Morango e Whey
+                <h3>
+                    clique para abrir a Receita.
+                </h3>
+            </div>
+            <div class="card" onclick="openPopup('posTreino3')">
+                <img src="img/salada-de-quinoa-2.jpg" alt="Salada de Quinoa e Legumes" class="card-image">
+                Salada de Quinoa e Legumes
+                <h3>
+                    clique para abrir a Receita.
+                </h3>
+            </div>
+        </div>
+
+        <!-- Ganho de Massa Muscular -->
+        <div id="ganhoMassa" class="recipe-section">
+            <h2>Receitas para Ganho de Massa Muscular</h2>
+            <div class="card" onclick="openPopup('massa1')">
+                <img src="img/img-site-2-mis-carne-quinoa.jpg" alt="Quinoa com Carne Moída" class="card-image">
+                Quinoa com Carne Moída
+                <h3>
+                    clique para abrir a Receita.
+                </h3>
+            </div>
+            <div class="card" onclick="openPopup('massa2')">
+                <img src="img/receita-de-salmao-com-batata-doce-e-banana-da-terra-ao-forno.jpg"
+                    alt="Batata Doce com Salmão" class="card-image">
+                Batata Doce com Salmão
+                <h3>
+                    clique para abrir a Receita.
+                </h3>
+            </div>
+            <div class="card" onclick="openPopup('massa3')">
+                <img src="img/frango-glrelhado.jpeg" alt="Frango Grelhado com Brócolis" class="card-image">
+                Frango Grelhado com Brócolis
+                <h3>
+                    clique para abrir a Receita.
+                </h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popups de Receitas -->
+    <!-- Pré-treino -->
+    <div id="preTreino1" class="popup">
+        <div class="popup-content">
+            <img src="img/banana_aveia.png" alt="Shake de Banana e Aveia" class="recipe-image">
+            <h1>Shake de Banana e Aveia</h1>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>1 banana</li>
+                <li>2 colheres de aveia</li>
+                <li>1 copo de leite desnatado</li>
+                <li>1 colher de mel</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong></p>
+            <ol>
+                <li>Descasque a banana e corte-a em pedaços menores.</li>
+                <li>No liquidificador, adicione os pedaços de banana, aveia, leite desnatado e mel.</li>
+                <li>Bata todos os ingredientes até obter uma mistura homogênea.</li>
+                <li>Adicione gelo, se preferir, e sirva em seguida.</li>
+            </ol>
+            <button class="close-btn" onclick="closePopup('preTreino1')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="preTreino2" class="popup">
+        <div class="popup-content">
+            <img src="img/panqueca_proteica.jpg" alt="Panqueca Proteica" class="recipe-image">
+            <h1>Panqueca Proteica</h1>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>2 claras de ovo</li>
+                <li>1 banana</li>
+                <li>2 colheres de aveia</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong></p>
+            <ol>
+                <li>Amasse a banana com um garfo até formar um purê.</li>
+                <li>Misture as claras de ovo, a banana amassada e a aveia até formar uma massa homogênea.</li>
+                <li>Aqueça uma frigideira antiaderente e despeje uma porção da massa.</li>
+                <li>Cozinhe por 2-3 minutos de cada lado ou até dourar. Sirva em seguida.</li>
+            </ol>
+            <button class="close-btn" onclick="closePopup('preTreino2')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="preTreino3" class="popup">
+        <div class="popup-content">
+            <img src="img/Tapioca-de-banana-com-canela.jpg" alt="Tapioca com Pasta de Amendoim" class="recipe-image">
+            <h1>Tapioca com Pasta de Amendoim</h1>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>3 colheres de goma de tapioca</li>
+                <li>1 colher de pasta de amendoim</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong></p>
+            <ol>
+                <li>Aqueça uma frigideira antiaderente em fogo médio.</li>
+                <li>Adicione a goma de tapioca na frigideira, espalhando uniformemente.</li>
+                <li>Deixe cozinhar por 1-2 minutos até firmar.</li>
+                <li>Retire e espalhe a pasta de amendoim. Dobre e sirva.</li>
+            </ol>
+            <button class="close-btn" onclick="closePopup('preTreino3')">Fechar</button>
+        </div>
+    </div>
+    <!-- Popups de Receitas Pós-treino -->
+    <div id="posTreino1" class="popup">
+        <div class="popup-content">
+            <img src="images/omelete_frango.jpg" alt="Omelete com Frango" class="recipe-image">
+            <h1>Omelete com Frango</h1>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>2 ovos</li>
+                <li>100g de peito de frango cozido e desfiado</li>
+                <li>1/2 cebola picada</li>
+                <li>Sal e pimenta a gosto</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong></p>
+            <ol>
+                <li>Bata os ovos com sal e pimenta.</li>
+                <li>Aqueça uma frigideira e adicione a cebola picada até dourar.</li>
+                <li>Adicione o frango desfiado e misture.</li>
+                <li>Despeje os ovos batidos na frigideira e cozinhe até firmar. Sirva quente.</li>
+            </ol>
+            <button class="close-btn" onclick="closePopup('posTreino1')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="posTreino2" class="popup">
+        <div class="popup-content">
+            <img src="images/smoothie_morango.jpg" alt="Smoothie de Morango e Whey" class="recipe-image">
+            <h1>Smoothie de Morango e Whey</h1>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>1 banana</li>
+                <li>1 xícara de morangos</li>
+                <li>1 scoop de whey protein</li>
+                <li>1 copo de água ou leite</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong></p>
+            <ol>
+                <li>Coloque todos os ingredientes no liquidificador.</li>
+                <li>Bata até obter uma mistura homogênea.</li>
+                <li>Sirva imediatamente.</li>
+            </ol>
+            <button class="close-btn" onclick="closePopup('posTreino2')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="posTreino3" class="popup">
+        <div class="popup-content">
+            <img src="images/salada_quinoa.jpg" alt="Salada de Quinoa e Legumes" class="recipe-image">
+            <h1>Salada de Quinoa e Legumes</h1>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>1 xícara de quinoa cozida</li>
+                <li>1/2 xícara de tomate picado</li>
+                <li>1/2 xícara de pepino picado</li>
+                <li>Suco de 1 limão</li>
+                <li>Sal e azeite a gosto</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong></p>
+            <ol>
+                <li>Em uma tigela, misture a quinoa com os legumes.</li>
+                <li>Adicione o suco de limão, sal e azeite.</li>
+                <li>Sirva gelada.</li>
+            </ol>
+            <button class="close-btn" onclick="closePopup('posTreino3')">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Popups de Receitas para Ganho de Massa Muscular -->
+    <div id="massa1" class="popup">
+        <div class="popup-content">
+            <img src="images/quinoa_carne.jpg" alt="Quinoa com Carne Moída" class="recipe-image">
+            <h1>Quinoa com Carne Moída</h1>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>1 xícara de quinoa cozida</li>
+                <li>200g de carne moída</li>
+                <li>1 cebola picada</li>
+                <li>Temperos a gosto</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong></p>
+            <ol>
+                <li>Aqueça uma panela e refogue a cebola.</li>
+                <li>Adicione a carne moída e cozinhe até dourar.</li>
+                <li>Misture com a quinoa e tempere a gosto. Sirva quente.</li>
+            </ol>
+            <button class="close-btn" onclick="closePopup('massa1')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="massa2" class="popup">
+        <div class="popup-content">
+            <img src="images/batata_salmao.jpg" alt="Batata Doce com Salmão" class="recipe-image">
+            <h1>Batata Doce com Salmão</h1>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>1 batata doce</li>
+                <li>150g de salmão</li>
+                <li>Ervas a gosto</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong></p>
+            <ol>
+                <li>Cozinhe a batata doce até ficar macia.</li>
+                <li>Grelhe o salmão temperado até estar bem cozido.</li>
+                <li>Sirva a batata ao lado do salmão.</li>
+            </ol>
+            <button class="close-btn" onclick="closePopup('massa2')">Fechar</button>
+        </div>
+    </div>
+
+    <div id="massa3" class="popup">
+        <div class="popup-content">
+            <img src="images/frango_brocolis.jpg" alt="Frango Grelhado com Brócolis" class="recipe-image">
+            <h1>Frango Grelhado com Brócolis</h1>
+            <p><strong>Ingredientes:</strong></p>
+            <ul>
+                <li>200g de peito de frango</li>
+                <li>1 xícara de brócolis</li>
+                <li>Temperos a gosto</li>
+            </ul>
+            <p><strong>Modo de preparo:</strong></p>
+            <ol>
+                <li>Tempere o frango e grelhe até dourar.</li>
+                <li>Coza os brócolis até ficarem macios.</li>
+                <li>Sirva o frango ao lado dos brócolis.</li>
+            </ol>
+            <button class="close-btn" onclick="closePopup('massa3')">Fechar</button>
+        </div>
+    </div>
+    <script>
+        function openPopup(popupId) {
+            document.getElementById(popupId).style.display = 'block';
+        }
+
+        function closePopup(popupId) {
+            document.getElementById(popupId).style.display = 'none';
+        }
+        document.querySelectorAll('.navbar-menu a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
