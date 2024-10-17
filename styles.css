@@ -182,7 +182,7 @@ h3 {
 
 p {
     margin-bottom: 10px;
-    font-weight: bold;
+
 }
 
 /* Ajuste para alinhar as listas à esquerda */
@@ -397,4 +397,11 @@ nav {
 /* Efeito de rolagem suave */
 html {
     scroll-behavior: smooth;
+}
+
+.thank-you {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.2em;
+    color: #ffffff;
 }
